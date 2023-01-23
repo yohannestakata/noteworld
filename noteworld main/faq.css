@@ -1,0 +1,96 @@
+.main {
+  display: flex;
+  padding: 4rem 12rem;
+  gap: 4rem;
+}
+.firstsec {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  width: 60%;
+}
+.contain {
+  border: 1px solid rgb(8, 127, 91);
+  /* border-radius: 10px; */
+  overflow: hidden;
+}
+h1 {
+  margin-bottom: 2.4rem;
+}
+body {
+  background-color: #fff;
+}
+.top {
+  background-color: rgb(8, 127, 91);
+  color: #fff;
+  line-height: 2.4rem;
+  font-size: 2rem;
+  padding: 1.6rem;
+  display: flex;
+  justify-content: space-between;
+}
+.bottom {
+  padding: 1.6rem;
+  line-height: 2.4rem;
+  font-size: 1.6rem;
+  height: 0;
+  padding: 0;
+  transition: 0.3s;
+}
+.secondsec {
+  /* padding: 4rem; */
+  width: 40%;
+}
+.img {
+  height: 100%;
+  width: 100%;
+}
+
+.img img {
+  position: sticky;
+  top: 8rem;
+  width: 100%;
+}
+
+.dropdown__link {
+  display: relative;
+}
+
+.dropdown {
+  flex-direction: column;
+  position: absolute;
+  background-color: rgb(33, 33, 33);
+  top: 100%;
+  left: 0%;
+  display: none;
+  width: 16rem;
+  transform: translateX(-55%);
+}
+.dropdown a {
+  padding: 0.8rem 1.6rem;
+  color: #fff;
+  display: inline-block;
+}
+.dropdown__container {
+  /* width: 12rem; */
+  position: relative;
+  z-index: 1;
+}
+
+.dropdown__container:hover .dropdown {
+  display: flex;
+}
+
+.dropdown a:hover {
+  background-color: rgb(8, 127, 91);
+  box-shadow: inset 0px 0px 0px 2px var(--color-grey);
+}
+
+.dropdown:hover {
+  display: flex;
+}
+
+.top::after {
+  content: "+";
+  font-size: 3.2rem;
+}

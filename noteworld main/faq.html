@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="faq.css" />
+    <title>notewold. - FAQ</title>
+  </head>
+  <body>
+    <nav class="navigation">
+      <img src="assets/logo/logo-white.png" alt="" class="navigation__logo" />
+      <div div class="navigation__links">
+        <a href="index.html" class="navigation__link">Home</a>
+        <div class="dropdown__container">
+          <a href="#" class="navigation__link dropdown__link">Help</a>
+          <div class="dropdown">
+            <a href="user.html" class="">User guide</a>
+            <a href="faq.html" class="navigation__link--highlight">FAQ</a>
+            <a href="privacy.html" class="navigation__link">Privacy policy</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="main">
+      <div class="firstsec">
+        <div class="head">
+          <h1>FAQs</h1>
+        </div>
+        <div class="contain">
+          <div class="top">How do I use noteworld?</div>
+          <div class="bottom">
+            Noteworld is designed to be easy to use and intuitively navigate
+            through. If you have any trouble using noteworld, please refer to
+            the <a href="user.html"> user guide</a> page .
+          </div>
+        </div>
+        <div class="contain">
+          <div class="top">How do I create an account?</div>
+          <div class="bottom">
+            Noteworld is free to use. You do not need to sign up to use it.
+          </div>
+        </div>
+        <div class="contain">
+          <div class="top">How do I save my data?</div>
+          <div class="bottom">
+            Noteworld takes care of saving data for you. Any changes made will
+            be saved right there in your local storage.
+          </div>
+        </div>
+        <div class="contain">
+          <div class="top">
+            Do I need an internet connection to use noteworld?
+          </div>
+          <div class="bottom">
+            Once you load noteworld in your browser, every activity is tracked
+            and saved in your local storage. You can keep using noteworld while
+            offline. However, loading the map will still require you to connect
+            to the internet if you are to navigate to a different location.
+          </div>
+        </div>
+      </div>
+      <div class="secondsec">
+        <div class="img">
+          <img
+            src="assets/img/map-booklet-with-question-mark-vector-1914760.webp"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <img
+        src="assets/logo/logo-white.png"
+        alt="noteworld logo"
+        class="footer__logo"
+      />
+      <nav class="footer__nav">
+        <a href="#header" class="footer__link">Home</a>
+
+        <a href="#about" class="footer__link">About</a>
+
+        <a href="user.html" class="footer__link">User guide</a>
+
+        <a href="index.html" class="footer__link">Privacy policy</a>
+      </nav>
+      <div class="copy">&copy; 2022 noteworld. All rights reserved.</div>
+    </footer>
+  </body>
+</html>
+<script>
+  document.querySelectorAll(".top").forEach((e) => {
+    e.addEventListener("click", (e) => {
+      if (e.target.nextElementSibling.style.padding != "1.6rem") {
+        e.target.nextElementSibling.style.height = "12rem";
+        e.target.nextElementSibling.style.padding = "1.6rem";
+      } else {
+        e.target.nextElementSibling.style.height = "0";
+        e.target.nextElementSibling.style.padding = "0";
+      }
+    });
+  });
+  console.log(document.querySelector(".top"));
+</script>
